@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { listStore } from "./store";
 
 const User = () => {
@@ -5,11 +6,16 @@ const User = () => {
 
   //   const { updateBears } = listStore();
   //   updateBears({ Name });
+  const [user, setUser] = useState("");
+
+  useEffect(() => {
+    const userName = prompt("이름을 입력해 주세요.");
+    setUser(userName);
+  }, []);
 
   return (
     <div>
-      {/* <h2>{Name}님의 ToDoList</h2> */}
-      {/* <h2>00님의 TODOLIST</h2> */}
+      <h2>{user}님의 ToDoList</h2>
     </div>
   );
 };
