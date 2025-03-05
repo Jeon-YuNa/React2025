@@ -1,0 +1,41 @@
+.box {
+  color: navy;
+  border-radius: 20px;
+  border: 1px solid #eee;
+  overflow: hidden;
+  width: fit-content;
+}
+.box .top {
+  padding: 30px 20px;
+  border-bottom: 1px dashed navy;
+}
+.box .top > strong {
+  display: block;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  padding: 30px 20px;
+}
+.box li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  width: 400px;
+}
+
+.soldOut {
+  opacity: 0.5;
+  color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.soldOut .top {
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.7);
+}
+.active {
+  border: 3px solid navy;
+}
+.active .top {
+  background-color: navy;
+  color: #fff;
+}
