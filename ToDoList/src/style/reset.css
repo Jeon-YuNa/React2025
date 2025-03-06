@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #fff;
 }
 body {
   background-color: #efefef;
@@ -9,6 +10,9 @@ body {
   height: 100vh;
   background-image: url("../../img/clouds.jpg");
   padding: 40px;
+}
+img {
+  width: 100%;
 }
 span,
 strong {
